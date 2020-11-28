@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Layout from "../layout";
 import data from '../data/villager.json'
 
 class Villager extends React.Component {
@@ -166,7 +166,7 @@ console.log(species)
 
      
     return (
-
+<Layout>
       <div>
       <h1>Villagers</h1>
      <form style={{textAlign: "center"}}>
@@ -264,6 +264,8 @@ console.log(species)
 {formatHourCards()}
    </div>
    </div>
+
+   </Layout>
     );
    
   }
