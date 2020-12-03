@@ -1232,7 +1232,7 @@
           23
         ]
       },
-      "price": 10,
+      "price": 100,
       "price-flick": 15,
       "catch-phrase": "I found a cicada shell! I'm glad the little guy came out of it!",
       "museum-phrase": "Cicadas! The nerve! Not only are they loud, they leave their cicada shells lying about! When it's time for a cicada nymph to turn into an adult, you see, it clings to a tree and sheds its exoskeleton. Then it just leaves this shell of its former self hanging right there! Awful manners, really...and awfully terrifying too.",
@@ -3423,7 +3423,7 @@
         "time": "",
         "isAllDay": true,
         "isAllYear": true,
-        "location": "On rocks (when raining)",
+        "location": "On rocks when raining",
         "rarity": "Common",
         "month-array-northern": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         "month-array-southern": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],

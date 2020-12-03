@@ -2,9 +2,9 @@ import React from 'react';
 import Layout from "../layout";
 import InsideNav from '../components/InsideNav'
 
-import data from '../data/fish.json'
+import data from '../data/insect.json'
 
-class Fish extends React.Component {
+class Insects extends React.Component {
 
   constructor(props){
     super(props);
@@ -143,20 +143,20 @@ zodiac(date){
         }
       })(), margin: "2px", borderRadius: "7px"}} className="card fish" key={i}>
       <div style={{backgroundColor: "#EFEEE7", margin: "5px", padding: "10px"}}>
-      <div style={{display: "flex", justifyContent: "space-between"}}>
+      <div style={{display: "flex", justifyContent: "space-between", height: "4em"}}>
        <h3 style={{textTransform: "capitalize", color: "black"}}>{fish.name["name-USen"]}</h3>
       
        </div>
-       <div style={{background: "#5F9CD3"}}>
+       <div style={{background: "#5F9CD3", textAlign: "center"}}>
        <img  width="60%" src={fish["icon_uri"]} alt="hi" />
        </div>
        <div style={{textAlign: "left", height: "140px"}}>
        <p>Location: {fish.availability.location}</p>
-       <p>Size: {fish.shadow}</p>
-       <p>Time: {fish.availability.time || "All Day"}</p>
-       <p>NH {fish.availability["month-northern"] || "All Year"}</p>
-       <p>SH: {fish.availability["month-southern"]  || "All Year"}</p>
-       </div>
+       <p>Time of Day: {fish.availability.time || "All Day"}</p>
+     <p>TIme of Year</p>
+     <p>North: {fish.availability["month-northern"] || "All Year"}</p>
+     <p>South: {fish.availability["month-southern"]  || "All Year"}</p>
+      </div>
        </div>
        <div style={{display: "flex", justifyContent: "space-between"}}>
        <p>{fish.availability.rarity}</p>
@@ -202,11 +202,19 @@ return months.map((month, i) =>
 <label for="location">Location:</label>
 <select id="location" name="location"   onInput={this.handleLocation}>
   <option value="All">All</option>
-  <option value="Sea">Sea</option>
-  <option value="Pond">Pond</option>  
-  <option value="Pier">Pier</option>
-  <option value="River">River</option>
- 
+  <option value="Flying">Flying</option>
+  <option value="On trees">Trees</option>  
+  <option value="Flying near hybrid flowers">Hybrid flowers</option>
+  <option value="On tree stumps">Stumps</option>
+  <option value="On rotten food">Rotten food</option>
+  <option value="On villagers">Villagers</option>
+  <option value="On ponds and rivers">Ponds and rivers</option>  
+  <option value="Near trash">Trash</option>
+  <option value="On the ground">Ground</option>
+  <option value="On flowers">Flowers</option>
+  <option value="On beach rocks">Beach rocks</option>  
+  <option value="On rocks when raining">On rocks(when raining)</option>
+  <option value="Hitting rocks">Hit rocks</option>
 </select> 
 
 <label for="sort">Sort by Price:</label>
@@ -240,4 +248,4 @@ return months.map((month, i) =>
     
   
 
-export default Fish;
+export default Insects;

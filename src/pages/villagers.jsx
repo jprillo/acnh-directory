@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from "../layout";
 import data from '../data/villager.json'
+import InsideNav from '../components/InsideNav'
 
 class Villager extends React.Component {
 
@@ -168,9 +169,10 @@ console.log(species)
     return (
 <Layout>
       <div>
+      <InsideNav/>
       <h1>Villagers</h1>
      <form style={{textAlign: "center"}}>
-     <label for="hobby">Hobby:</label>
+     <label className="label" for="hobby">Hobby:</label>
 <select id="hobby" name="hobby"   onInput={this.handleHobbies}>
   <option value="All">All</option>
   <option value="Education">Education</option>

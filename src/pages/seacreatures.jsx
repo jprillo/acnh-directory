@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../data/sea.json';
+import Layout from "../layout";
 import InsideNav from '../components/InsideNav'
 
 class Sea extends React.Component {
@@ -43,7 +44,7 @@ class Sea extends React.Component {
   
   render() {
     return (
-
+<Layout>
       <div>
         <InsideNav/>
       <h1>Sea Creatures</h1>
@@ -53,6 +54,7 @@ class Sea extends React.Component {
 {this.formatHourCards()}
    </div>
    </div>
+   </Layout>
     );
    
   }

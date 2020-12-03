@@ -1,5 +1,7 @@
 import React from 'react';
 import data from '../data/fossils.json'
+import Layout from "../layout";
+import InsideNav from '../components/InsideNav'
 
 class Fossil extends React.Component {
      formatHourCards = () => {  
@@ -32,6 +34,7 @@ class Fossil extends React.Component {
     return (
 
       <div>
+        <InsideNav/>
       <h1>Fossils</h1>
       
 <div style={{padding: "20px 10%", display: "flex", flexWrap: "wrap", justifyContent: "center"}}>

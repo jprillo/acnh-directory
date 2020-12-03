@@ -12,20 +12,16 @@ const InsideNav = () => {
    
     return (
         <div style={{position: "absolute", zIndex: "1000"}} className={` navagation-wrap col-12 ${isActive ? 'mobile-wrap' : ''}`}>
-            <div id="main-nav-wrap">
-                <div className="logo-wrap">
-                    <a href="/">
-                        <span className="formal" >Botanical</span><span className="primary-color"> Backyard</span> </a>
-                </div>
+            <div id="main-nav-wrap">            
                 <div >
                     <div className={` responsive-nav ${isActive ? 'mobile-nav' : ''}`}>
                         <ul className="nav">
 
                             <li><Link className="hack" to="/">Home</Link></li>
-                            <li><Link to="/villagers/" className="hack">Villager</Link></li>
-                            <li><Link to="/seacreatures/" className="hack">Seacreatures</Link></li>
-                            <li><Link to="/fish/" className="hack">Fish</Link></li>
-                            <li><Link to="/bugs/" className="hack">Bugs</Link></li>
+                            <li><Link to="/villagers" className="hack">Villager</Link></li>
+                            <li><Link to="/seacreatures" className="hack">Seacreatures</Link></li>
+                            <li><Link to="/fish" className="hack">Fish</Link></li>
+                            <li><Link to="/bugs" className="hack">Bugs</Link></li>
                         </ul>
                     </div>
 

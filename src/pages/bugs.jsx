@@ -1,5 +1,7 @@
 import React from 'react';
 import data from '../data/insect.json'
+import Layout from "../layout";
+import InsideNav from '../components/InsideNav'
 
 class Insects extends React.Component {
      formatHourCards = () => {  
@@ -43,8 +45,9 @@ class Insects extends React.Component {
   
   render() {
     return (
-
+<Layout>
       <div>
+      <InsideNav/>
       <h1>Insects</h1>
       
 <div style={{padding: "20px 10%", display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
@@ -52,6 +55,7 @@ class Insects extends React.Component {
 {this.formatHourCards()}
    </div>
    </div>
+   </Layout>
     );
    
   }
